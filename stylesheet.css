@@ -4,6 +4,18 @@ p {
   line-height: 1.5;
 }
 
+body {
+  text-align: center;
+}
+
+.contact {
+  text-align: left;
+}
+
+.img-circle {
+    border-radius: 50%;
+}
+
 a {
   color: #28B800;
   text-decoration: none;
