@@ -1,7 +1,7 @@
 p {
   font-family: Lato, Arial, sans-serif;
   font-size: 16px;
-  line-height: 1.7;
+  line-height: 1.5;
 }
 
 a {
@@ -9,7 +9,12 @@ a {
   text-decoration: none;
 }
 
-a:hover, a:visited {
+a:hover {
+  color: #1c8000;
+  text-decoration:underline;
+}
+
+a:visited {
   color: #1c8000;
 }
 
