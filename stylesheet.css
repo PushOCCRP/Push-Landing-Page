@@ -29,3 +29,33 @@ h1 {
   font-weight: 600;
   font-size: 46px;
 }
+
+
+#nav {
+  list-style-type: none;
+  padding:0;
+
+
+}
+
+#nav li{
+  list-style-type: none;
+  float: left;
+  margin: 0;
+  padding: 0;
+  width: 25%;
+}
+
+#nav a:link, #nav a:visited{
+  display:block;
+  background-color: #E8551D;
+  text-align: center;
+  font-weight: bold;
+  font-family: Helvetica, Arial, sans-serif;
+  padding: 4px;
+  text-decoration: none;
+}
+
+#nav a:hover, #nav a:active{
+  color: white;
+}
