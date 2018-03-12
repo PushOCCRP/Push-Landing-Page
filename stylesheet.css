@@ -34,6 +34,8 @@ h1 {
 #nav {
   list-style-type: ;
   padding:0;
+  display: block;
+  background-color: #0E4771;
 
 
 }
@@ -47,15 +49,19 @@ h1 {
   width: 25%; */
 }
 
+#nav h3{
+  text-align:center;
+  color: white;
+}
 #nav a:link, #nav a:visited{
-  /* display:block;
-  background-color: #E8551D;
+
+  /*
   text-align: center;
   font-weight: bold;
   font-family: Helvetica, Arial, sans-serif;
   padding: 4px;
-  text-decoration: none; */
-}
+  text-decoration: none;
+} */
 
 #nav a:hover, #nav a:active{
   /* color: white; */
