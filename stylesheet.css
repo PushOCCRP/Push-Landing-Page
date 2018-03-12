@@ -32,7 +32,7 @@ h1 {
 
 
 #nav {
-  list-style-type: ;
+  list-style-type: square ;
   padding:0;
   display: block;
   background-color: #0E4771;
@@ -41,28 +41,27 @@ h1 {
 }
 
 #nav li{
+  display: block;
   list-style-type: square;
   text-align: center;
-  /* float: left;
-  margin: 0;
-  padding: 0;
-  width: 25%; */
+  
 }
 
 #nav h3{
   text-align:center;
   color: white;
-}
+
+ }
+ /*
 #nav a:link, #nav a:visited{
 
-  /*
   text-align: center;
   font-weight: bold;
   font-family: Helvetica, Arial, sans-serif;
   padding: 4px;
   text-decoration: none;
-} */
+}
 
 #nav a:hover, #nav a:active{
-  /* color: white; */
-}
+  color: white;
+} */
