@@ -37,6 +37,19 @@ body {
 
 .img-circle {
     border-radius: 50%;
+    text-align:center;
+}
+
+.photo {
+  text-align: center;
+}
+
+.bio {
+  text-align: center;
+}
+
+.info {
+  text-align: center;
 }
 
 ul {
