@@ -26,6 +26,23 @@ nav ul {
   justify-content: space-around;
 }
 
+body {
+  text-align: center;
+}
+
+.contact {
+  text-align: left;
+}
+
+.img-circle {
+    border-radius: 50%;
+}
+
+ul {
+  list-style-type: none;
+  font-weight:bold;
+}
+
 nav a {
   color: #28B800;
   text-decoration: none;
@@ -139,7 +156,7 @@ h1 {
 }
 
 
- /*
+/*
 #nav a:link, #nav a:visited{
 
   text-align: center;
