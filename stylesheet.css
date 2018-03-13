@@ -66,20 +66,15 @@ h1 {
 }
 
 .footer{
-  position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    color: black;
+  /* position: static; */
+    color: #0E4771;
     border-top:  15px solid #0E4771;
 
 }
 .footer li{
+  float:left;
   list-style-type: none;
-  display: inline;
-  text-align: center;
   width: 25%;
-
 }
 
 }
