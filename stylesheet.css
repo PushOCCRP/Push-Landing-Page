@@ -65,6 +65,24 @@ h1 {
     margin-right: auto;
 }
 
+.footer{
+  position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: black;
+    border-top:  15px solid #0E4771;
+
+}
+.footer li{
+  list-style-type: none;
+  display: inline;
+  text-align: center;
+  width: 25%;
+
+}
+
+}
  /*
 #nav a:link, #nav a:visited{
 
