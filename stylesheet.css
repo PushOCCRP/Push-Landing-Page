@@ -167,3 +167,48 @@ ul {
   font-family: Lato, Arial, sans-serif;
   font-size: 16px;
 }
+
+/* Homepage style goes here */
+.homepageimg {
+  max-width: 100%;
+  height: auto;
+}
+
+.homepageimg img {
+  max-width: 100%;
+  height:auto;
+}
+
+.homepage_statement {
+  text-align: center;
+}
+
+#testimonial {
+  text-align: center;
+}
+
+.person {
+  text-align:center;
+  display: inline-block;
+  position: relative;
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.person img {
+  width: auto;
+  height: 100%;
+  margin-left: -30px;
+}
+
+.info {
+  text-align: center;
+}
+
+.quote {
+  margin-left: 1em;
+  margin-right: 1em;
+  text-align: left;
+}
