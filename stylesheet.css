@@ -28,7 +28,7 @@ nav ul {
 }
 
 .contact {
-  text-align: left;
+  text-align: center;
 }
 
 .img-circle {
@@ -42,9 +42,18 @@ nav ul {
 
 .bio {
   text-align: center;
+  font-family: Dosis, Helvetica, sans-serif;
+  font-size: 24px;
+  margin: 0 0 0 0;
 }
 
 .info {
+  text-align: center;
+  padding-left: 0;
+  font-family: Lato, Arial, sans-serif;
+}
+
+.container {
   text-align: center;
 }
 
@@ -121,7 +130,7 @@ a:visited {
   font-weight: 400;
   font-size: 24px;
   padding-top: 8px;
-  margin-bottom: 3px;
+  margin-bottom: 10px;
 }
 
 h1 {
