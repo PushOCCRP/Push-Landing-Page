@@ -105,7 +105,7 @@ ul {
   font-weight:bold;
 }
 
-/* Dev and Journo page navbar */
+/* Dev, Journo, Anti-Censorship page navbar */
 #nav {
   list-style-type: square;
   padding: 0;
@@ -149,7 +149,7 @@ ul {
 
 /* footer elements */
 .footer{
-  /* position: static; */
+    /* position: static; */
     color: #0E4771;
     border-top: 15px solid #0E4771;
 }
