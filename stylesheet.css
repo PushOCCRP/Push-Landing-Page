@@ -213,3 +213,9 @@ ul {
   margin-right: 1em;
   text-align: left;
 }
+
+li #doclist{
+  font-family: Lato, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.3;
+}
