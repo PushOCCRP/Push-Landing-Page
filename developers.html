@@ -3,7 +3,7 @@
 <html>
 
 <head>
-	<title>	Your page title goes here </title>
+	<title>Developers</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="stylesheet.css" rel="stylesheet">
@@ -15,7 +15,7 @@
 	<nav>
 		<a href="index.html"> <img src="logo.png" alt="PushMobile" id="logo"> </a>
 		<ul>
-			<li><a href="index.html">Home</a></li>
+			<li><a href="anti-censorship.html">Anti-Censorship</a></li>
 			<li><a href="developers.html">Developers</a></li>
 			<li><a href="journalists.html">Journalists</a></li>
 			<li><a href="contact.html">Contact</a></li>
@@ -25,48 +25,85 @@
 	<div id="nav">
 		<ul>
 				<h3 class="subhead">For Developers</h3>
-				<li><a href="#gs"># Getting Started</a></li>
 				<li><a href="#doc"># Documentation</a></li>
 				<li><a href="#int"># iOS/Android Integration</a></li>
-				<li><a href="#settings"># Settings</a></li>
-				<li><a href="#support"># Support </a></li>
+				<li><a href="#servers"># Servers</a></li>
+				<li><a href="#whatserv"># Current Server Capabilities</a></li>
+				<li><a href="#next"># Future Plans</a></li>
+
 		</ul>
 	</div>
 	<div id="text">
-		<h2 id="gs" class="subhead">Getting Started<h2>
-		<p>Where ignorance lurks, so too do the frontiers of discovery and imagination.
-To be the first to enter the cosmos, to engage, single-handed, in an unprecedented duel with nature—could one dream of anything more?
-Science has not yet mastered prophecy. We predict too much for the next year and yet far too little for the next 10.
-It suddenly struck me that that tiny pea, pretty and blue, was the Earth. I put up my thumb and shut one eye, and my thumb blotted out the planet Earth. I didn't feel like a giant. I felt very, very small.
-It suddenly struck me that that tiny pea, pretty and blue, was the Earth. I put up my thumb and shut one eye, and my thumb blotted out the planet Earth. I didn't feel like a giant. I felt very, very small.
-			</p>
+
 		<h2 id="doc" class="subhead">Documentation<h2>
-			<p> We choose to go to the moon in this decade and do the other things, not because they are easy, but because they are hard, because that goal will serve to organize and measure the best of our energies and skills, because that challenge is one that we are willing to accept, one we are unwilling to postpone, and one which we intend to win.
-As I stand out here in the wonders of the unknown at Hadley, I sort of realize there’s a fundamental truth to our nature, Man must explore . . . and this is exploration at its greatest.
-For those who have seen the Earth from space, and for the hundreds and perhaps thousands more who will, the experience most certainly changes your perspective. The things that we share in our world are far more valuable than those which divide us.
-			</p>
+			<ul id="doclist">
+				<li> CMS plugins custom written </li>
+					<li> Not dependent on 3rd party plugins </li>
+					<li> JSON output for non-REST API CMS’s </li>
+					<li> <a href=" https://www.github.com/PushOCCRP"> Github Source Code </a></li>
+			</ul>
 		<h2 id="int" class="subhead">iOS/Android Integration<h2>
-			<p> To be the first to enter the cosmos, to engage, single-handed, in an unprecedented duel with nature—could one dream of anything more?
-The sky is the limit only for those who aren't afraid to fly!
-When I orbited the Earth in a spaceship, I saw for the first time how beautiful our planet is. Mankind, let us preserve and increase this beauty, and not destroy it!</p>
-		<h2 id="settings" class="subhead">Settings<h2>
-			<p> Astronomy compels the soul to look upward, and leads us from this world to another.
-Failure is not an option.
-Spaceflights cannot be stopped. This is not the work of any one man or even a group of men. It is a historical process which mankind is carrying out in accordance with the natural laws of human development.</p>
-		<h2 id="support" class="subhead">Support<h2>
-			<p> Dinosaurs are extinct today because they lacked opposable thumbs and the brainpower to build a space program.
-Problems look mighty small from 150 miles up.
-Buy why, some say, the moon? Why choose this as our goal? And they may as well ask why climb the highest mountain?</p>
-	</div>
+				<ul id=integration>
+					<li> All apps written in native code</li>
+							<ul>
+						<li class="sublist"> Android - Java</li>
+						<li class="sublist"> iOS - Objective-C (not Swift, though moving towards it) </li>
+						<li class="sublist"> Not Phone Gap etc.</li>
+							</ul>
+					<li> Caches stored offline in persistent memory</li>
+				</ul>
 
-
+		<h2 id="int" class="subhead">Servers<h2>
+			<ul>
+				<li id="pserv"> Push server written in Ruby on Rails <li>
+						<ul class="sublist">
+						<li > RESTful JSON interface</li>
+					<li > User administration</li>
+				<li> Analytics</li>
+			<li > Push notification support</li>
+				<li> Dockerized</li>
+			<li> AWS deployment automated</li>
+			<li >HTTPS via LetsEncrypt (managed via scripts) </li>
+				<li> Minimizes and proxies all requests </li>
+				</ul>
+			</ul>
+			<h2 id="whatserv" class="subhead">What can Push servers do?<h2>
+				<ul class="sublist">
+					<li> Full user management</li>
+					<li> Analytics tracking</li>
+					<li> Push notification management</li>
+					<li> Manage categories and display (without having to redeploy app)</li>
+					<li> Tons of scripts to make managing the system easy</li>
+				<li> Use with a bunch of different CMS’s </li>
+						<ul class="sublist">
+							<li> Wordpress</li>
+							<li> Joomla</li>
+							<li> SourceFabric's Newscoop</li>
+							<li> TownNews Blox (coming very soon)</li>
+						</ul>
+				<li> Deploy on any standard cloud provider (Dockerized)</li>
+				<ul class="sublist">
+					<li> Heroku</li>
+					<li> AWS</li>
+					<li> Google Cloud</li>
+					<li> Microsoft Azure</li>
+					</ul>
+				<li> Fully encrypted communications using HTTPS (on by default)</li>
+				<ul class="sublist">
+				</ul>
+			</ul>
+			<h2 id="next" class="subhead">Future Plans<h2>
+				<ul class="sublist">
+					<li> Comments via Facebook</li>
+					<li> Ad network support (what are you using?)</li>
+					<li>Integrated donation support</li>
+					<li> More CMS’s, deeper support for current ones (Wordpress especially)</li>
+					<li> Easier setup</li>
+					<li> Full Continuous Integration and Continuous Deployment</li>
+					<li> Tell me the features you would like to see</li>
+				</ul>
 	<div class="footer">
-		<ul>
-			<li>Our Team</li>
-			<li>Privacy</li>
-			<li>Terms of Use</li>
-			<li>Accessibility</li>
-		</ul>
+
 	</div>
 	<script src="script.js"></script>
 
