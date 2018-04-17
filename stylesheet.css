@@ -8,17 +8,18 @@ body {
   text-align: left;
 }
 
-#logo {
+#logoMobile {
     display: block;
     padding: 2px;
     width: 150px;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 15px;
 }
 
 a:hover {
   color: #1c8000;
-  text-decoration:underline;
+  text-decoration: underline;
 }
 
 p {
@@ -42,12 +43,20 @@ h1 {
 }
 
 /* top navbar elements */
+#navigation {
+  background-color: white;
+  width: 100%;
+}
+
+nav {
+  box-shadow: 0 4px 2px -2px gray;
+}
+
 nav ul {
   font-family: Lato, Arial, sans-serif;
   color: #28B800;
   text-decoration: none;
   font-family: Lato, Arial, sans-serif;
-  box-shadow: 0px .5px grey;
   padding-left: 0;
   padding-bottom: 10px;
   list-style-type: none;
@@ -55,6 +64,8 @@ nav ul {
   flex-direction: row;
   justify-content: center;
   justify-content: space-around;
+  margin-top: 5px;
+  margin-bottom: 0px;
 }
 
 nav a {
@@ -66,7 +77,7 @@ nav a {
 .sticky {
   position: fixed;
   top: 0;
-  width: 100%;
+  z-index: 1;
 }
 
 /* contact page elements  */
@@ -121,9 +132,11 @@ ul {
   padding-bottom:0;
 }
 
-#nav li{
+#nav li {
   display: block;
   list-style-type: square;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 
 #nav h3{
@@ -140,6 +153,11 @@ ul {
   text-decoration: none;
 }
 
+#nav ul a:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
 #nav ul {
   list-style-type: none;
   text-align: center;
@@ -147,11 +165,24 @@ ul {
   padding-left: 0;
 }
 
+#pserv{
+  font-family: Lato, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.3;
+  list-style-type: square;
+}
+
+#servers{
+  font-family: Lato, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.3;
+  list-style-type: square;
+}
 /* footer elements */
 .footer{
     /* position: static; */
     color: #0E4771;
-    border-top: 15px solid #0E4771;
+    border-top: 90px solid #0E4771;
 }
 
 .footer ul {
@@ -169,6 +200,42 @@ ul {
   font-size: 16px;
 }
 
+
+#doclist{
+  font-family: Lato, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.3;
+  list-style-type: square;
+}
+
+#integration{
+  font-family: Lato, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.3;
+  list-style-type: square;
+}
+ul #intplus{
+  font-family: Lato, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.3;
+  list-style-type: square;
+}
+
+#servers{
+  font-family: Lato, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.3;
+  list-style-type: square;
+}
+.sublist{
+  font-family: Lato, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.3;
+  list-style-type: square;
+}
+
+
+}
 /* Homepage style goes here */
 .homepageimg {
   max-width: 100%;
@@ -212,4 +279,28 @@ ul {
   margin-left: 1em;
   margin-right: 1em;
   text-align: left;
+}
+
+@media screen and (min-width: 1000px) {
+
+  nav ul {
+    flex-flow: row wrap;
+    justify-content: flex-end;
+    padding-bottom: 30px;
+  }
+
+  nav li {
+    padding: 10px 10px;
+  }
+
+  #logoMobile {
+    float: left;
+    margin-top: 0;
+<<<<<<< HEAD
+
+=======
+
+>>>>>>> 14e5a998d4cfec94321491101e01255c9494d830
+  }
+
 }
