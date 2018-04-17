@@ -244,7 +244,7 @@ ul #intplus{
 
 .homepageimg img {
   max-width: 100%;
-  height:auto;
+  height: auto;
 }
 
 .homepage_statement {
@@ -296,11 +296,6 @@ ul #intplus{
   #logoMobile {
     float: left;
     margin-top: 0;
-<<<<<<< HEAD
-
-=======
-
->>>>>>> 14e5a998d4cfec94321491101e01255c9494d830
   }
 
 }
