@@ -8,14 +8,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="stylesheet.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Dosis:400,600|Lato" rel="stylesheet">
-
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous">
+    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css" />
 </head>
 
 <body>
 
 <!--This is a comment. It won't show up in your browser, only in the page source-->
-	<nav>
-		<a href="index.html"> <img src="logo.png" alt="PushMobile" id="logo"> </a>
+	<nav id="navigation">
+		<a href="index.html"> <img src="logo.png" alt="PushMobile" id="logoMobile"> </a>
 		<ul>
 			<li><a href="anti-censorship.html">Anti-Censorship</a></li>
 			<li><a href="developers.html">Developers</a></li>
@@ -24,7 +30,7 @@
 		</ul>
 	</nav>
 	<div class="homepageimg">
-		<img src="homepage.jpeg"/>
+		<img src="phone.jpg"/>
   </div>
 
   <p class="homepage_statement">Our mission is to build a community of developers, publishers and readers who want to make news accessible to everyone.</p>
@@ -64,16 +70,15 @@
         <img src="person.jpg" width="300px"/>
       </div>
     </div>
+    <ul class="info">
+  		<li>Name</li>
+  		<li>Age</li>
+  		<li>Occupation</li>
+  	</ul>
+    <p class="quote">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, </p>
   </div>
-
-  <ul class="info">
-		<li>Name</li>
-		<li>Age</li>
-		<li>Occupation</li>
-	</ul>
-
-  <p class="quote">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, </p>
-
+    </div>
+  </div>
 	<div class="footer">
 		<ul>
 				<li>Our Team</li>
@@ -82,7 +87,17 @@
 				<li>Accessibility</li>
 		</ul>
 </div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 <script src="script.js"></script>
+<script>
+  $(document).ready(function(){
+    $('.carousel').slick({
+      dots:true,
+    });
+  });
+</script>
 <!--This is a comment. It won't show up in your browser, only in the page source-->
 </body>
 
