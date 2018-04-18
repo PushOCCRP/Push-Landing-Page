@@ -1,200 +1,122 @@
+<!DOCTYPE html>
 
-<header class="navbar navbar-bright navbar-fixed-top" role="banner">
-  <div class="container">
-    <div class="navbar-header">
-      <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".navbar-collapse">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a href="/" class="navbar-brand">Bootply</a>
+<html>
+
+<head>
+	<title>Developers</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="dev_test.css" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Dosis:400,600|Lato" rel="stylesheet">
+
+
+</head>
+
+<body>
+<header>
+	<nav id="navigation">
+    <div class="photoContainer">
+      <a href="index.html"><img src="logo.png" alt="PushMobile" id="logoMobile"></a>
     </div>
-    <nav class="collapse navbar-collapse" role="navigation">
-      <ul class="nav navbar-nav">
-        <li>
-          <a href="#">Get Started</a>
-        </li>
-        <li>
-          <a href="#">Edit</a>
-        </li>
-        <li>
-          <a href="#">Visualize</a>
-        </li>
-        <li>
-          <a href="#">Prototype</a>
-        </li>
-      </ul>
-    </nav>
-  </div>
+		<ul>
+			<li><a href="anti-censorship.html">Anti-Censorship</a></li>
+			<li><a href="developers.html">Developers</a></li>
+			<li><a href="journalists.html">Journalists</a></li>
+			<li><a href="contact.html">Contact</a></li>
+		</ul>
+	</nav>
 </header>
 
-<div id="masthead">
-  <div class="container">
-      <div class="row">
-        <div class="col-md-7">
-          <h1>Bootply
-            <p class="lead">The easiest way to apply Bootstrap</p>
-          </h1>
-        </div>
-        <div class="col-md-5">
-            <div class="well well-lg">
-              <div class="row">
-                <div class="col-sm-6">
-        	      	<img src="//placehold.it/180x100" class="img-responsive">
-                </div>
-                <div class="col-sm-6">
-	              	<strong>Important</strong>
-                  	<p>Blah blah blah blah bla!</p>
-                </div>
-              </div>
-            </div>
-        </div>
-      </div>
-  </div><!-- /cont -->
+
+<!-- Side navigation -->
+	<div class="sidenav">
+		<ul>
+				<h3 class="subhead">For Developers</h3>
+				<li><a href="#doc"># Documentation</a></li>
+				<li><a href="#int"># iOS/Android Integration</a></li>
+				<li><a href="#servers"># Servers</a></li>
+				<li><a href="#whatserv"># Current Server Capabilities</a></li>
+				<li><a href="#next"># Future Plans</a></li>
+		</ul>
+	</div>
+
+  <!-- Page content -->
+	<div id="text">
+		<h2 id="doc" class="subhead">Documentation<h2>
+			<ul id="doclist">
+				<li> CMS plugins custom written </li>
+					<li> Not dependent on 3rd party plugins </li>
+					<li> JSON output for non-REST API CMS’s </li>
+					<li> <a href=" https://www.github.com/PushOCCRP"> Github Source Code </a></li>
+			</ul>
+		<h2 id="int" class="subhead">iOS/Android Integration<h2>
+				<ul id=integration>
+					<li> All apps written in native code</li>
+							<ul>
+						<li class="sublist"> Android - Java</li>
+						<li class="sublist"> iOS - Objective-C (not Swift, though moving towards it) </li>
+						<li class="sublist"> Not Phone Gap etc.</li>
+							</ul>
+					<li> Caches stored offline in persistent memory</li>
+				</ul>
+
+		<h2 id="int" class="subhead">Servers<h2>
+			<ul>
+				<li id="pserv"> Push server written in Ruby on Rails <li>
+						<ul class="sublist">
+						<li > RESTful JSON interface</li>
+					<li > User administration</li>
+				<li> Analytics</li>
+			<li > Push notification support</li>
+				<li> Dockerized</li>
+			<li> AWS deployment automated</li>
+			<li >HTTPS via LetsEncrypt (managed via scripts) </li>
+				<li> Minimizes and proxies all requests </li>
+				</ul>
+			</ul>
+			<h2 id="whatserv" class="subhead">What can Push servers do?<h2>
+				<ul class="sublist">
+					<li> Full user management</li>
+					<li> Analytics tracking</li>
+					<li> Push notification management</li>
+					<li> Manage categories and display (without having to redeploy app)</li>
+					<li> Tons of scripts to make managing the system easy</li>
+				<li> Use with a bunch of different CMS’s </li>
+						<ul class="sublist">
+							<li> Wordpress</li>
+							<li> Joomla</li>
+							<li> SourceFabric's Newscoop</li>
+							<li> TownNews Blox (coming very soon)</li>
+						</ul>
+				<li> Deploy on any standard cloud provider (Dockerized)</li>
+				<ul class="sublist">
+					<li> Heroku</li>
+					<li> AWS</li>
+					<li> Google Cloud</li>
+					<li> Microsoft Azure</li>
+					</ul>
+				<li> Fully encrypted communications using HTTPS (on by default)</li>
+				<ul class="sublist">
+				</ul>
+			</ul>
+			<h2 id="next" class="subhead">Future Plans<h2>
+				<ul class="sublist">
+					<li> Comments via Facebook</li>
+					<li> Ad network support (what are you using?)</li>
+					<li>Integrated donation support</li>
+					<li> More CMS’s, deeper support for current ones (Wordpress especially)</li>
+					<li> Easier setup</li>
+					<li> Full Continuous Integration and Continuous Deployment</li>
+					<li> Tell me the features you would like to see</li>
+				</ul>
+
+<div class="footer">
+    <p>asdlfjiejfeislfiejsflji</p>
 </div>
 
-<!-- Begin Body -->
-<div class="container">
-	<div class="row">
-  			<div class="col-md-3" id="leftCol">
+<script src="script.js"></script>
 
-              	<ul class="nav nav-stacked" id="sidebar">
-                  <li><a href="#sec0">Section 0</a></li>
-                  <li><a href="#sec1">Section 1</a></li>
-                  <li>
-                    <a href="#sec2">Section 2</a>
-                    <ul class="nav nav-stacked">
-                      <li><a href="#sec2a">Section 2 a</a></li>
-                      <li><a href="#sec2b">Section 2 b</a></li>
-                    </ul>
-                  </li>
-                  <li><a href="#sec3">Section 3</a></li>
-                  <li><a href="#sec4">Section 4</a></li>
-              	</ul>
-
-      		</div>
-      		<div class="col-md-9" id="mainCol">
-
-              	<br>
-
-              	<h2 id="sec0">Content</h2>
-                At Bootply we like to build simple Bootstrap templates that utilize the code Bootstap CSS without a lot of customization. Sure you can
-              	find a lot of Bootstrap themes and inspiration, but these templates tend to be heavy on customization.
+</body>
 
 
-
-              	<hr class="col-md-12">
-              	Rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae
-                dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia cor magni dolores
-                eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit,
-                sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
-                Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut.
-              	Rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae
-                dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia cor magni dolores
-                eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit,
-                sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
-                Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut!
-
-
-
-              	<h2 id="sec1">Content</h2>
-              	<p>
-                Rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae
-                dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut.
-              	</p>
-              	<div class="row">
-                  <div class="col-md-6">
-                    <div class="panel panel-default">
-                      <div class="panel-heading"><h3>Hello.</h3></div>
-                      <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis pharetra varius quam sit amet vulputate.
-                      Quisque mauris augue, molestie tincidunt condimentum vitae, gravida a libero. Aenean sit amet felis
-                      dolor, in sagittis nisi. Sed ac orci quis tortor imperdiet venenatis. Duis elementum auctor accumsan.
-                      Aliquam in felis sit amet augue.
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-md-6">
-                      <div class="panel panel-default">
-                      <div class="panel-heading"><h3>Hello.</h3></div>
-                      <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis pharetra varius quam sit amet vulputate.
-                      Quisque mauris augue, molestie tincidunt condimentum vitae, gravida a libero. Aenean sit amet felis
-                      dolor, in sagittis nisi. Sed ac orci quis tortor imperdiet venenatis. Duis elementum auctor accumsan.
-                      Aliquam in felis sit amet augue.
-                      </div>
-                    </div>
-                  </div>
-              	</div>
-
-              	<hr>
-
-              	<h2 id="sec2">Section 2</h2>
-              	<p>
-                Rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae
-                dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia cor magni dolores
-                eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit,
-                sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
-                Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut!
-              	</p>
-              	<div class="row">
-              		<div class="col-md-4"><img src="//placehold.it/300x300" class="img-responsive"></div>
-                  	<div class="col-md-4"><img src="//placehold.it/300x300" class="img-responsive"></div>
-                  	<div class="col-md-4"><img src="//placehold.it/300x300" class="img-responsive"></div>
-              	</div>
-
-                <h3 id="sec2a">Section 2 a</h3>
-              	<p>
-                Rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae
-                dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia cor magni dolores.
-                Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit,
-                sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
-                  Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia cor magni dolores
-                eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit,
-                sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
-                Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut!
-                  <br><br>
-              	</p>
-
-                <h3 id="sec2b">Section 2 b</h3>
-              	<p>
-                Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia cor magni dolores. Nemo enim ipsam voluptatem quia voluptas
-                sit aspernatur aut odit aut fugit, sed quia cor magni dolores. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit,
-                sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
-                  Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia cor magni dolores
-                eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit,
-                sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
-                Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut!
-                sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. <br><br>
-              	</p>
-
-
-              	<hr>
-
-              	<h2 id="sec3">Section 3</h2>
-      			Images are responsive sed @mdo but sum are more fun peratis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
-                totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae
-                dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia cor magni dolores
-                eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit,
-                sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
-                Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut!!<br><br>
-
-
-                <hr>
-
-              	<h2 id="sec4">Section 4</h2>
-      			Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
-                totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae
-                dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia cor magni dolores
-                eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit,
-                sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
-                Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut<br><br>
-
-
-              	<hr>
-              <h4><a href="http://bootply.com/75781">Edit on Bootply</a></h4>
-              	<hr>
-
-
-      		</div>
-  	</div>
-</div>
+</html>

@@ -1,80 +1,354 @@
+/* global elements */
 body {
-	padding-top:50px;
+  margin: 0;
 }
 
-#masthead {
-	min-height:270px;
-	background-color:#000044;
-  	color:#aaaacc;
+#text {
+  margin: 10px;
+  text-align: left;
 }
 
-#masthead h1 {
-	font-size: 55px;
-	line-height: 1;
+#logoMobile {
+    display: block;
+    padding: 2px;
+    width: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
 }
 
-#masthead .well {
-	margin-top:13%;
-	background-color:#111155;
-  	border-color:#000033;
+a:hover {
+  color: #1c8000;
+  text-decoration: underline;
 }
 
-.icon-bar {
-	background-color:#fff;
+p {
+  font-family: Lato, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.3;
 }
 
-@media screen and (min-width: 768px) {
-	#masthead h1 {
-		font-size: 100px;
-	}
+.subhead {
+  font-family: Dosis, Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  padding-top: 8px;
+  margin-bottom: 10px;
 }
 
-.navbar-bright {
-	background-color:#111155;
-    color:#fff;
+h1 {
+  font-family: Dosis, Helvetica, sans-serif;
+  font-weight: 600;
+  font-size: 46px;
 }
 
-.navbar-bright a, #masthead a, #masthead .lead {
-  	color:#aaaacc;
+/* top navbar elements */
+#navigation {
+  background-color: white;
+  width: 100%;
 }
 
-.navbar-bright li > a:hover {
-    background-color:#000033;
+nav {
+  box-shadow: 0 4px 2px -2px gray;
 }
 
-.affix-top,.affix{
-	position: static;
+nav ul {
+  font-family: Lato, Arial, sans-serif;
+  color: #28B800;
+  text-decoration: none;
+  font-family: Lato, Arial, sans-serif;
+  padding-left: 0;
+  padding-bottom: 10px;
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  justify-content: space-around;
+  margin-top: 5px;
+  margin-bottom: 0px;
 }
 
-@media (min-width: 979px) {
-  #sidebar.affix-top {
-    position: static;
-  	margin-top:30px;
-  	width:228px;
+nav a {
+  color: #28B800;
+  text-decoration: none;
+  font-family: Lato, Arial, sans-serif;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  z-index: 1;
+}
+
+/* contact page elements  */
+.contact {
+  text-align: center;
+}
+
+.img-circle {
+    border-radius: 50%;
+    text-align:center;
+}
+
+.photo {
+  text-align: center;
+}
+
+.bio {
+  text-align: center;
+  font-family: Dosis, Helvetica, sans-serif;
+  font-size: 24px;
+  margin: 0 0 0 0;
+}
+
+.info {
+  text-align: center;
+  padding-left: 0;
+  font-family: Lato, Arial, sans-serif;
+}
+
+.container {
+  text-align: center;
+}
+
+ul {
+  list-style-type: none;
+  font-weight:bold;
+}
+
+/* Dev, Journo, Anti-Censorship page navbar */
+.sidenav {
+  list-style-type: square;
+  padding: 0;
+  display: block;
+  background-color: #0E4771;
+  justify-content: center;
+  width: 100%;
+}
+
+.sidenav h3 {
+  text-align:center;
+  color: white;
+  padding-bottom:0;
+}
+
+.sidenav li {
+  display: block;
+  list-style-type: square;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.sidenav h3{
+  text-align:center;
+  color: white;
+  padding-bottom:0;
+}
+
+.sidenav ul a{
+  font-family: Lato, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.sidenav ul a:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+.sidenav ul {
+  list-style-type: none;
+  text-align: left;
+  padding-bottom: 3px;
+  padding-left: 0;
+}
+
+/* The sidebar menu */
+.sidenav {
+    height: 100%; /* Full-height: remove this if you want "auto" height */
+    width: 200px; /* Set the width of the sidebar */
+    position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+    z-index: 1; /* Stay on top */
+    top: auto; /* Stay at the top */
+    left: 0;
+		bottom: auto;
+    background-color: #0E4771; /* Black */
+    overflow-x: hidden; /* Disable horizontal scroll */
+		overflow-y:scroll;
+		float:none;
+    padding-top: 20px;
+}
+
+/* The navigation menu links */
+.sidenav a {
+		font-family: Lato, Arial, sans-serif;
+		padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #ffffff;
+    display: block;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+    color: #ffffff;
+		text-decoration: underline;
+}
+
+/* Style page content */
+#text {
+    margin-left: 200px; /* Same as the width of the sidebar */
+    padding: 0px 10px;
+}
+
+/* End of Dev, Journo, Anti-Censorship page navbar */
+
+#pserv{
+  font-family: Lato, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.3;
+  list-style-type: square;
+}
+
+#servers{
+  font-family: Lato, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.3;
+  list-style-type: square;
+}
+/* footer elements */
+.footer {
+		position: static;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		border-top: 4px solid grey;
+}
+
+.footer p {
+	text-align: center;
+	color: grey;
+}
+
+.footer ul {
+  padding-left: 0;
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  justify-content: space-around;
+}
+
+.footer li{
+  font-family: Lato, Arial, sans-serif;
+  font-size: 16px;
+}
+
+
+#doclist{
+  font-family: Lato, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.3;
+  list-style-type: square;
+}
+
+#integration{
+  font-family: Lato, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.3;
+  list-style-type: square;
+}
+ul #intplus{
+  font-family: Lato, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.3;
+  list-style-type: square;
+}
+
+#servers{
+  font-family: Lato, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.3;
+  list-style-type: square;
+}
+.sublist{
+  font-family: Lato, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.3;
+  list-style-type: square;
+}
+
+
+}
+/* Homepage style goes here */
+.homepageimg {
+  max-width: 100%;
+  height: auto;
+}
+
+.homepageimg img {
+  max-width: 100%;
+  height:auto;
+}
+
+.homepage_statement {
+  text-align: center;
+}
+
+#testimonial {
+  text-align: center;
+}
+
+.person {
+  text-align:center;
+  display: inline-block;
+  position: relative;
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.person img {
+  width: auto;
+  height: 100%;
+  margin-left: -30px;
+}
+
+.info {
+  text-align: center;
+}
+
+.quote {
+  margin-left: 1em;
+  margin-right: 1em;
+  text-align: left;
+}
+
+@media screen and (min-width: 800px) {
+
+  nav ul {
+    flex-flow: row wrap;
+    justify-content: flex-end;
+    padding-bottom: 30px;
   }
 
-  #sidebar.affix-bottom {
-    position: relative;
+  nav li {
+    padding: 10px 10px;
   }
 
-  #sidebar.affix {
-    position: fixed;
-    top:70px;
-    width:228px;
+  #logoMobile {
+    float: left;
+    margin-top: 0;
+
+
+<<<<<<< HEAD
+
+=======
+
+>>>>>>> 14e5a998d4cfec94321491101e01255c9494d830
   }
-}
 
-#sidebar li.active {
-  	border:0 #eee solid;
-  	border-right-width:4px;
-}
-
-#sidebar li li.active {
-  	border:0 #ccc solid;
-  	border-right-width:3px;
-}
-
-#mainCol h2 {
-	padding-top: 55px;
-    margin-top: -55px;
 }
