@@ -5,7 +5,6 @@ body {
 
 #text {
   margin: 10px;
-  text-align: left;
 }
 
 #logoMobile {
@@ -116,7 +115,7 @@ ul {
   font-weight:bold;
 }
 
-/* Dev, Journo, Anti-Censorship page navbar */
+/* Dev and Journo page navbar */
 #nav {
   list-style-type: square;
   padding: 0;
@@ -165,24 +164,11 @@ ul {
   padding-left: 0;
 }
 
-#pserv{
-  font-family: Lato, Arial, sans-serif;
-  font-size: 16px;
-  line-height: 1.3;
-  list-style-type: square;
-}
-
-#servers{
-  font-family: Lato, Arial, sans-serif;
-  font-size: 16px;
-  line-height: 1.3;
-  list-style-type: square;
-}
 /* footer elements */
 .footer{
-    /* position: static; */
+  /* position: static; */
     color: #0E4771;
-    border-top: 90px solid #0E4771;
+    border-top: 15px solid #0E4771;
 }
 
 .footer ul {
@@ -200,42 +186,6 @@ ul {
   font-size: 16px;
 }
 
-
-#doclist{
-  font-family: Lato, Arial, sans-serif;
-  font-size: 16px;
-  line-height: 1.3;
-  list-style-type: square;
-}
-
-#integration{
-  font-family: Lato, Arial, sans-serif;
-  font-size: 16px;
-  line-height: 1.3;
-  list-style-type: square;
-}
-ul #intplus{
-  font-family: Lato, Arial, sans-serif;
-  font-size: 16px;
-  line-height: 1.3;
-  list-style-type: square;
-}
-
-#servers{
-  font-family: Lato, Arial, sans-serif;
-  font-size: 16px;
-  line-height: 1.3;
-  list-style-type: square;
-}
-.sublist{
-  font-family: Lato, Arial, sans-serif;
-  font-size: 16px;
-  line-height: 1.3;
-  list-style-type: square;
-}
-
-
-}
 /* Homepage style goes here */
 .homepageimg {
   max-width: 100%;
