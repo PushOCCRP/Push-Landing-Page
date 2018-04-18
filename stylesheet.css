@@ -281,6 +281,21 @@ ul #intplus{
   text-align: left;
 }
 
+.wrapper{
+  width:100%;
+  text-align:center;
+}
+.carousel{
+  width:90%;
+  margin:0px auto;
+}
+.slick-slide{
+  margin:10px;
+}
+.slick-slide img{
+  width:100%;
+}
+
 @media screen and (min-width: 1000px) {
 
   nav ul {
