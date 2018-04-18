@@ -5,6 +5,8 @@ body {
 
 #text {
   margin: 10px;
+  margin-left: 200px;
+  padding: 0px 10px;
 }
 
 #logoMobile {
@@ -56,7 +58,7 @@ nav {
   box-shadow: 0 4px 2px -2px gray;
 }
 
-nav ul {
+#navigation ul {
   font-family: Lato, Arial, sans-serif;
   color: #28B800;
   text-decoration: none;
@@ -72,7 +74,7 @@ nav ul {
   margin-bottom: 0px;
 }
 
-nav a {
+#navigation a {
   color: #28B800;
   text-decoration: none;
   font-family: Lato, Arial, sans-serif;
@@ -99,10 +101,11 @@ nav a {
 }
 
 .bio {
-  text-align: center;
+  width: 60%;
+  text-align: left;
   font-family: Dosis, Helvetica, sans-serif;
   font-size: 24px;
-  margin: 0 0 0 0;
+  margin: 0 auto;
 }
 
 .info {
@@ -121,7 +124,7 @@ ul {
 }
 
 /* Dev and Journo page navbar */
-#nav {
+.nav{
   list-style-type: square;
   padding: 0;
   display: block;
@@ -130,26 +133,26 @@ ul {
   width: 100%;
 }
 
-#nav h3 {
+.nav h3 {
   text-align:center;
   color: white;
   padding-bottom:0;
 }
 
-#nav li {
+.nav li {
   display: block;
   list-style-type: square;
   padding-top: 5px;
   padding-bottom: 5px;
 }
 
-#nav h3{
+.nav h3{
   text-align:center;
   color: white;
   padding-bottom:0;
 }
 
-#nav ul a{
+.nav ul a{
   font-family: Lato, Arial, sans-serif;
   font-size: 16px;
   line-height: 1.5;
@@ -157,23 +160,111 @@ ul {
   text-decoration: none;
 }
 
-#nav ul a:hover {
+.nav ul a:hover {
   color: #ffffff;
   text-decoration: underline;
 }
 
-#nav ul {
+.nav ul {
   list-style-type: none;
   text-align: center;
   padding-bottom: 3px;
   padding-left: 0;
 }
 
+/* New sidebar menu */
+
+.sidenav {
+  list-style-type: square;
+  padding: 0;
+  display: block;
+  background-color: #0E4771;
+  justify-content: center;
+  width: 100%;
+}
+
+.sidenav h3 {
+  text-align:center;
+  color: white;
+  padding-bottom:0;
+}
+
+.sidenav li {
+  display: block;
+  list-style-type: square;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.sidenav h3{
+  text-align:center;
+  color: white;
+  padding-bottom:0;
+}
+
+.sidenav ul a{
+  font-family: Lato, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.sidenav ul a:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+.sidenav ul {
+  list-style-type: none;
+  text-align: left;
+  padding-bottom: 3px;
+  padding-left: 0;
+}
+
+.sidenav {
+    height: 100%; /* Full-height: remove this if you want "auto" height */
+    width: 200px; /* Set the width of the sidebar */
+    position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+    z-index: 1; /* Stay on top */
+    top: auto; /* Stay at the top */
+    left: 0;
+		bottom: auto;
+    background-color: #0E4771; /* Black */
+    overflow-x: hidden; /* Disable horizontal scroll */
+		overflow-y:scroll;
+		float: none;
+    padding-top: 20px;
+}
+
+/* The navigation menu links */
+.sidenav a {
+		font-family: Lato, Arial, sans-serif;
+		padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #ffffff;
+    display: block;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+    color: #ffffff;
+		text-decoration: underline;
+}
+
 /* footer elements */
-.footer{
-  /* position: static; */
-    color: #0E4771;
-    border-top: 15px solid #0E4771;
+.footer {
+		position: static;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		border-top: 4px solid grey;
+}
+
+.footer p {
+	text-align: center;
+	color: grey;
 }
 
 .footer ul {
@@ -183,13 +274,13 @@ ul {
   flex-direction: row;
   justify-content: center;
   justify-content: space-around;
-
 }
 
 .footer li{
   font-family: Lato, Arial, sans-serif;
   font-size: 16px;
 }
+
 
 /* Homepage style goes here */
 .homepageimg {
@@ -250,16 +341,16 @@ ul {
 .slick-slide img{
   width:100%;
 }
-}
-@media screen and (min-width: 1000px) {
 
-  nav ul {
+@media screen and (min-width: 800px) {
+
+  #navigation ul {
     flex-flow: row wrap;
     justify-content: flex-end;
     padding-bottom: 30px;
   }
 
-  nav li {
+  #navigation li {
     padding: 10px 10px;
   }
 
