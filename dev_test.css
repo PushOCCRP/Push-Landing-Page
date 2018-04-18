@@ -165,7 +165,7 @@ ul {
   padding-left: 0;
 }
 
-/* The sidebar menu */
+/* New sidebar menu */
 .sidenav {
     height: 100%; /* Full-height: remove this if you want "auto" height */
     width: 200px; /* Set the width of the sidebar */
@@ -342,6 +342,7 @@ ul #intplus{
   #logoMobile {
     float: left;
     margin-top: 0;
+	}
 
 
 <<<<<<< HEAD

@@ -40,6 +40,11 @@ h1 {
   font-size: 46px;
 }
 
+.sublist{
+  font-family: Lato, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.1;
+}
 /* top navbar elements */
 nav ul {
   font-family: Lato, Arial, sans-serif;
@@ -134,7 +139,7 @@ ul {
 #nav ul a{
   font-family: Lato, Arial, sans-serif;
   font-size: 16px;
-  line-height: 1.5;
+  line-height: 1;
   color: #ffffff;
   text-decoration: none;
 }
@@ -212,3 +217,40 @@ ul {
   margin-right: 1em;
   text-align: left;
 }
+<<<<<<< HEAD
+=======
+
+.wrapper{
+  width:100%;
+  text-align:center;
+}
+.carousel{
+  width:90%;
+  margin:0px auto;
+}
+.slick-slide{
+  margin:10px;
+}
+.slick-slide img{
+  width:100%;
+}
+}
+@media screen and (min-width: 1000px) {
+
+  nav ul {
+    flex-flow: row wrap;
+    justify-content: flex-end;
+    padding-bottom: 30px;
+  }
+
+  nav li {
+    padding: 10px 10px;
+  }
+
+  #logoMobile {
+    float: left;
+    margin-top: 0;
+  }
+
+}
+>>>>>>> 1b1c5a888ee3c5ae614a51e25f897c005122b93b
