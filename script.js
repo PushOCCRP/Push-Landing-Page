@@ -4,8 +4,6 @@ window.addEventListener('resize', function(){
     }
 });
 
-window.onscroll = function() {sticky_nav()}
-
 nav = document.querySelector('#navigation');
 navTop = nav.offsetTop;
 sidenav = document.querySelector('.nav');
