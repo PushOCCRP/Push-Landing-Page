@@ -384,4 +384,12 @@ ul {
     margin: 0 auto;
   }
 
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    margin: 0 auto;
+  }
+
 }
