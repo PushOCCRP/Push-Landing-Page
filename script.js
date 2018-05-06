@@ -1,9 +1,8 @@
-
-window.onscroll = function() {sticky_nav()}
-
+window.onscroll = function() {sticky_nav()};
 
 nav = document.querySelector('#navigation');
 navTop = nav.offsetTop;
+
 sidenav = document.querySelector('.nav');
 text = document.querySelector('#text');
 homepageimg = document.querySelector('.homepageimg');
@@ -12,10 +11,16 @@ function sticky_nav() {
   if (window.pageYOffset >= navTop) {
     document.body.style.paddingTop = nav.offsetHeight + 'px';
     nav.classList.add("sticky");
+    if (window.innerWidth >= 1250) {
+      nav.style.width = "80%";
+    }
   }
   else {
     document.body.style.paddingTop = 0;
     nav.classList.remove("sticky");
+    if (window.innerWidth >= 1250) {
+      nav.style.width = "100%";
+    }
   }
 }
 
@@ -31,7 +36,6 @@ function myFunction(x) {
         homepageimg.style.marginLeft = "0";
         sidenav.classList.remove("sidenav");
         sidenav.classList.add("nav");
-
     }
 }
 

@@ -157,6 +157,8 @@ ul {
 .nav li {
   display: block;
   list-style-type: square;
+  padding-top: 3px;
+  padding-bottom: 3px;
 }
 
 .nav h3{
@@ -369,6 +371,10 @@ ul {
 
 @media screen and (min-width: 800px) {
 
+  #navigaton {
+    width: 100%;
+  }
+
   #navigation ul {
     flex-flow: row wrap;
     justify-content: flex-end;
@@ -389,13 +395,12 @@ ul {
 @media screen and (min-width: 1250px) {
 
   .all {
-    max-width: 80%;
+    width: 80%;
     margin: 0 auto;
   }
 
   #navigation {
-    width: 100%;
-    margin: 0 auto;
+    margin: auto;
   }
 
 }
