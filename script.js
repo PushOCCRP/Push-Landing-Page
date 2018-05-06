@@ -1,8 +1,6 @@
-window.addEventListener('resize', function(){
-    if(window.innerWidth < 1250){
-        window.onscroll = function() {sticky_nav()}
-    }
-});
+
+window.onscroll = function() {sticky_nav()}
+
 
 nav = document.querySelector('#navigation');
 navTop = nav.offsetTop;

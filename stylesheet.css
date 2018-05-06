@@ -43,6 +43,20 @@ h1 {
   font-size: 46px;
 }
 
+.censorshipContainer {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.ecosystemContainer {
+  margin: 0 auto;
+  text-align: center;
+}
+
+#ecosystem {
+  width: 75%;
+}
+
 .sublist{
   font-family: Lato, Arial, sans-serif;
   font-size: 16px;
@@ -381,14 +395,6 @@ ul {
 
   #navigation {
     width: 100%;
-    margin: 0 auto;
-  }
-
-  .sticky {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 1;
     margin: 0 auto;
   }
 
