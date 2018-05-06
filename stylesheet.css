@@ -339,6 +339,17 @@ ul {
   width:100%;
 }
 
+@media screen and (max-width: 345px) {
+  #navigation ul{
+    flex-flow: column;
+    text-align: center;
+  }
+  #navigation ul li{
+    padding-top: 3px;
+    padding-bottom: 3px;
+  }
+}
+
 @media screen and (min-width: 800px) {
 
   #navigation ul {
@@ -355,5 +366,8 @@ ul {
     float: left;
     margin-top: 0;
   }
-
+.all {
+  max-width: 80%;
+  margin: 0 auto;
+}
 }
