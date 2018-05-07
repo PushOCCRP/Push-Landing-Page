@@ -388,6 +388,7 @@ ul {
   #logoMobile {
     float: left;
     margin-top: 0;
+    margin-left: 5px;
   }
 
 }
