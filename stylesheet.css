@@ -12,7 +12,7 @@ body {
 #logoMobile {
     display: block;
     padding: 2px;
-    width: 150px;
+    width: 75px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -23,14 +23,14 @@ a:hover {
 }
 
 p {
-  font-family: Lato, Arial, sans-serif;
+  font-family: Avenir, Arial, sans-serif;
   font-size: 16px;
   line-height: 1.5;
   font-weight: 100;
 }
 
 .subhead {
-  font-family: Dosis, Helvetica, sans-serif;
+  font-family: Courier, Helvetica, sans-serif;
   font-weight: bold;
   font-size: 24px;
   padding-top: 8px;
@@ -38,7 +38,8 @@ p {
 }
 
 h1 {
-  font-family: Dosis, Helvetica, sans-serif;
+  font-family: Courier, serif;
+  font-weight: bold;
   font-weight: 600;
   font-size: 46px;
 }
@@ -58,7 +59,7 @@ h1 {
 }
 
 .sublist{
-  font-family: Lato, Arial, sans-serif;
+  font-family: Avenir, Arial, sans-serif;
   font-size: 16px;
   line-height: 1.5;
   font-weight: 100;
@@ -72,10 +73,9 @@ h1 {
 }
 
 #navigation ul {
-  font-family: Lato, Arial, sans-serif;
-  color: #28B800;
+  font-family: Avenir, Arial, sans-serif;
+  color: #00843D;
   text-decoration: none;
-  font-family: Lato, Arial, sans-serif;
   padding-left: 0;
   list-style-type: none;
   display: flex;
@@ -84,14 +84,17 @@ h1 {
   justify-content: space-around;
   margin-top: 10px;
   margin-bottom: 0;
+  position: relative;
+}
 
+.navContainer {
+  line-height: 45px;
 }
 
 #navigation a {
-  color: #28B800;
+  color: #00843D;
   text-decoration: none;
-  font-family: Lato, Arial, sans-serif;
-  padding-bottom: 10px;
+  font-family: Courier, Arial, sans-serif;
 }
 
 .sticky {
@@ -115,10 +118,34 @@ h1 {
   text-align: center;
 }
 
+.photoContainer {
+  font-family: Courier, serif;
+  font-weight: bold;
+  font-size: 42px;
+  color: black;
+  float: left;
+  width: 190px;
+  position: relative;
+}
+
+.photoContainer img {
+  float:left;
+}
+
+.photoContainer div {
+  color: black;
+  float: right;
+  width: 100%;
+  text-align: right;
+  position: absolute;               /* 2 */
+  top: 50%;                         /* 3 */
+  transform: translate(0, -50%) }   /* 4 */
+}
+
 .bio {
   width: 60%;
   text-align: left;
-  font-family: Dosis, Helvetica, sans-serif;
+  font-family: Avenir, Helvetica, sans-serif;
   font-size: 24px;
   margin: 0 auto;
 }
@@ -126,7 +153,7 @@ h1 {
 .info {
   text-align: center;
   padding-left: 0;
-  font-family: Lato, Arial, sans-serif;
+  font-family: Avenir, Arial, sans-serif;
 }
 
 .container {
@@ -143,7 +170,7 @@ ul {
   list-style-type: square;
   padding: 0;
   display: block;
-  background-color: #0E4771;
+  background-color: #63666A;
   justify-content: center;
   width: 100%;
 }
@@ -193,7 +220,7 @@ ul {
   list-style-type: square;
   padding: 0;
   display: block;
-  background-color: #0E4771;
+  background-color: #63666A;
   justify-content: center;
   width: 100%;
 }
@@ -218,7 +245,7 @@ ul {
 }
 
 .sidenav ul a{
-  font-family: Lato, Arial, sans-serif;
+  font-family: Courier, Arial, sans-serif;
   font-size: 16px;
   line-height: 1.5;
   color: #ffffff;
@@ -245,7 +272,7 @@ ul {
     top: auto; /* Stay at the top */
     left: auto;
 		bottom: auto;
-    background-color: #0E4771; /* Black */
+    background-color: #00843D; /* Black */
     overflow-x: hidden; /* Disable horizontal scroll */
 		overflow-y: scroll;
 		float: none;
@@ -254,7 +281,7 @@ ul {
 
 /* The navigation menu links */
 .sidenav a {
-		font-family: Lato, Arial, sans-serif;
+		font-family: Courier, Arial, sans-serif;
 		padding: 6px 8px 6px 16px;
     text-decoration: none;
     font-size: 25px;
@@ -292,14 +319,16 @@ ul {
 }
 
 .footer li{
-  font-family: Lato, Arial, sans-serif;
+  font-family: Avenir, Arial, sans-serif;
   font-size: 16px;
 }
 
 
 /* Homepage style goes here */
 .homepageimg {
-  max-width: 100%;
+  max-width: 80%;
+  margin-right: auto;
+  margin-left: auto;
   height: auto;
 }
 
@@ -309,6 +338,8 @@ ul {
 }
 
 .homepage_statement {
+  margin-top: 50px;
+  margin-bottom: 50px;
   text-align: center;
 }
 
@@ -378,7 +409,6 @@ ul {
   #navigation ul {
     flex-flow: row wrap;
     justify-content: flex-end;
-    padding-bottom: 30px;
   }
 
   #navigation li {
